@@ -1,0 +1,111 @@
+
+
+csináltunk egy kulcsot --> fájlkezelőben megnyitottuk a poweshell-t --> kitoroltuk -i -ig és beírtuk a sajátunkat 
+
+
+APACHE2
+
+| Apache2 --> sudo apt update --> sudo apt install apache2 
+
+| Indítsuk el az apache-ot -->  sudo systemctl start apache2
+
+| Ellenőrzésként --> http://localhost (localhost az a nyilvános IP-címed)
+
+
+PHPMYADMIN
+
+| sudo apt update && sudo apt upgrade --> ezeket inkább csináljuk meg mint ne
+
+| sudo apt install apache2 --> de ez már megvan ha nincs akkor irjuk
+
+| Telepités kezdés --> sudo apt install php libapache2-mod-php php-mysql | Ellenőrzés:  php -v
+
+| Telepítsd a MariaDB --> sudo apt install mariadb-server mariadb-client
+
+| Indítsd el a biztonsági beállító varázslót --> sudo mysql_secure_installation
+
+| Lépj be a web mappába --> cd /var/www/html
+
+| Töltsd le a phpMyAdmin legfrissebb verzióját --> sudo wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.tar.gz
+
+| Csomagold ki és nevezd át --> 
+				sudo tar xzf phpMyAdmin-latest-all-languages.tar.gz
+				sudo mv phpMyAdmin-*-all-languages phpmyadmin
+				sudo rm phpMyAdmin-latest-all-languages.tar.gz
+
+| Hozz létre egy Apache konfigurációs fájlt --> sudo nano /etc/apache2/conf-available/phpmyadmin.conf
+
+| Illeszd be ezt a tartalmat 
+
+		Alias /phpmyadmin /var/www/html/phpmyadmin
+
+		<Directory /var/www/html/phpmyadmin>
+    		Options Indexes FollowSymLinks
+    		AllowOverride All
+    		Require all granted
+		</Directory>
+
+| Engedélyezd a konfigurációt és indítsd újra az Apache-ot --> sudo a2enconf phpmyadmin --> sudo systemctl reload apache2
+
+| Ellenőrzés böngészőből --> http://localhost/phpmyadmin (ugyanúgy localhost nyilvános ip-cim)
+
+| Belépés a phpmyadminba az (root) és a te megadott jelszavad amit a "sudo mysql_secure_installation" során adtál meg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ha phpmyadmin-t akarunk csinálni akkor 'sudo apt update'-et ne felejtsük el es utána jöhet 'sudo apt install phpmyadmin'
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+azt megnyitottuk a fájl kezelőben és beírtuk a POWERSHELL-T és ott kitoroltuk a kulcsnak a nevét a -i -ig és beírtuk a sajátunkat
