@@ -1,0 +1,65 @@
+0. Tobb processzor, 8,valamennyi ram
+0.1 felajanlja formazni tudjuk, 10GB d meghajtot kell csinalni
+1. beinportalom a windowwst
+2. customre kell ranyomni a telepitesnel
+3. jelszo: Admin123
+4. ctrl malt delete bevitele
+5. jelszo: Admin123
+6. Add rule: domain services, dns.
+7. Domain controller beallitas: zaszlot megnyomom
+9. add new forest
+10. iroda.local(root domain name)
+11. pass: ami meg van adva, install
+12. restart
+13. ctrl malt delete bevitele
+14. beirni Admin123
+15. tools-users and computers
+16. iroda.local: new organization unit (iroda)
+17. letrehozzuk a felhasznalokat, allitunk jelszavakat
+18. 3. es 2. pipa (ugyanezt a tobbivel)
+19. new group (pl ha ertekesites van mellette akkor oda csinalom)
+20. Fajl szerver szolgaltatas: this pc-new folder iroda-ertekesiteskis geza-sales, nagy eva, vezetoseg.
+21. kis geza-properties-sharing-share, read write
+22. kis geza properties sharing foto
+23. kis geza-prop-sharing: kimasoljuk a cuccot
+24. connect: D to: amit kimasoltunk, ok ezt is kifotozni
+25. dhcp: add roles dhcp szerver
+26. zaszlo, complete dhcp, commit
+27. tools, dhcp, ipv4, new scope
+28. scope nev: iroda, 10.10.10.50 10.10.10.254 24 lenght
+29. ip: 10.10.10.1 add, next 
+30. tools, groiup policy
+31. domain, iroda local, elso 
+32. (ertekesitesbe letrehozzuk asltalanos) utana edit
+33. computer conf, policies, software settinh, software installation, new package
+34. eszkozog, integr telep
+35. cd drive amd 64 download
+36. utana rebootolja
+37. konfiguralas, megosztott mappak, add, egyeb, letoltese, automata csatolas, ok ok, start gep
+38. megnyitjuk fajlkezelo, downloads ott kell lennie.
+39. notepad, group police,, software esetting hozzaadjuk
+40.  policies, win setting, security, account policies, password policy
+41. min, define, apply, okmax 30 min 0
+42. powershell, gpupdate /force, screenshot
+43. 
+44. 
+45. 
+46. 
+47. 
+48. 
+49. 
+50. 
+51. 
+52. 
+53. 
+54. 
+55. 
+56. 
+57. 
+58. 
+59. 
+60. 
+
+
+
+
