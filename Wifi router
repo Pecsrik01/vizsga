@@ -16,3 +16,12 @@ Linksys --> http://192.168.1.1
 Alapértelmezett felhasználónév: gyakran üres (vagy admin)
 
 Alapértelmezett jelszó: admin vagy password
+
+
+
+Mode gombot nyomom amíg megjelenik valami a képernyőn
+switch: flash_init
+del flash:config.text
+del flash:vlan.dat
+yes
+
