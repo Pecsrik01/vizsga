@@ -25,3 +25,15 @@ del flash:config.text
 del flash:vlan.dat
 yes
 
+
+
+
+
+betöltéskor azonnal: CTRT+jobb egér special command /break
+rommon1>confreg 0x2142
+rommon2>reset
+
+
+
+
+
